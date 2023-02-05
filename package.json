@@ -1,0 +1,23 @@
+{
+  "name": "tabla_multiplicar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryanLlana/node-tabla.git"
+  },
+  "author": "Bryan Tito Llana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryanLlana/node-tabla/issues"
+  },
+  "homepage": "https://github.com/BryanLlana/node-tabla#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "yargs": "^17.6.2"
+  }
+}

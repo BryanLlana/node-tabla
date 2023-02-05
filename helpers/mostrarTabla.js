@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const mostrarTabla = async(base, limite) => {
+const mostrarTabla = async(base, limite, mostrar) => {
     try {
         let consolaTabla = '', dataTabla = ''
     
@@ -8,12 +8,14 @@ const mostrarTabla = async(base, limite) => {
             consolaTabla += `${base} x ${i} = ${base*i} \n`
             dataTabla += `${base} x ${i} = ${base*i} \n`
         }
-    
-        console.log(`===================`)
-        console.log(`=== Tabla del ${base} ===`)
-        console.log(`===================`)
-    
-        console.log(consolaTabla)
+
+        if(mostrar){
+            console.log(`===================`)
+            console.log(`=== Tabla del ${base} ===`)
+            console.log(`===================`)
+        
+            console.log(consolaTabla)
+        }
     
         fs.writeFileSync(`./tablas/tabla-del-${base}.txt`, dataTabla);
     
